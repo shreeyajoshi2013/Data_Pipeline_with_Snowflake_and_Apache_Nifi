@@ -1,0 +1,41 @@
+# SSH command for ec2 instance
+ssh -i "snowflake-project-keypair.pem" ec2-user@ec2-**-**-***-***.compute-1.amazonaws.com
+
+# Copy files to EC2
+scp -r -i snowflake-project-keypair.pem docker-exp ec2-user@ec2-**-**-***-***.compute-1.amazonaws.com:/home/ec2-user/docker_exp
+
+#Commands to install Docker
+sudo yum update -y
+sudo yum install docker
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo gpasswd -a $USER docker
+newgrp docker
+sudo yum install python-pip
+sudo pip install docker-compose
+
+
+# To check if docker is installed properly
+docker
+
+#Start Docker: 
+sudo systemctl start docker
+
+#Stop Docker:
+sudo systemctl stop docker
+
+# To check what all containers are there currently running in docker
+docker ps
+
+# To read the file 
+docker-compose up   
+  meaning (<filename_without_extension> up)
+
+#CLI access from local machine to Docker container: 
+docker exec -i -t nifi bash
+
+JupyterLab address
+http://<ip_address>:4888/lab 
+
+NiFi address
+http://<ip_address>:2080/nifi/ 
