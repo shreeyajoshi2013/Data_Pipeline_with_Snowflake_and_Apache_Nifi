@@ -3,8 +3,9 @@
 
 This project aims to implement a data pipeline which handles slowly changing dimensions of real time data.
 
-Project components diagram
-![My Image](Component Diagram.png) 
+### Project components diagram
+
+![My Image](component_diagram.png) 
 
 ### Highlights
 
