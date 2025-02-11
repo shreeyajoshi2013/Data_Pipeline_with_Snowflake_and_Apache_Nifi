@@ -1,5 +1,6 @@
-# Data_Pipeline_using_Apache_Nifi_and_Snowflake
-
+# Data_Pipeline_using_Apache_Nifi_and_Snowflake 
+ 
+(Work in progress)
 
 This project aims to implement a data pipeline which handles slowly changing dimensions of real time data.
 
