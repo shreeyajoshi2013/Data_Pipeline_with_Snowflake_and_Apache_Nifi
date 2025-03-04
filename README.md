@@ -4,6 +4,9 @@
 
 This project aims to implement a data pipeline which handles slowly changing dimensions of real time data.
 
+### Data Pipeline Flowchart
+
+![My Image](Data_Pipeline_Flowchart) 
 ### Project components diagram
 
 ![My Image](component_diagram.png) 
