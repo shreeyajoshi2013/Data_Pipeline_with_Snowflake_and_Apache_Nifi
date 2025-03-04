@@ -7,9 +7,6 @@ This project aims to implement a data pipeline which handles slowly changing dim
 ### Data Pipeline Flowchart
 
 ![Data_Pipeline_Flowchart](Data_Pipeline_Flowchart.jpg) 
-### Project components diagram
-
-![Component_Diagram](component_diagram.jpg) 
 
 ### Highlights
 
